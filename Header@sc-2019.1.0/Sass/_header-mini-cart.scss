@@ -8,7 +8,6 @@
 	right: 0;
 	box-shadow: 0 6px 12px transparentize($sc-neutral-shade-500, 1-0.175);
 	border: 1px solid $sc-color-theme-border-light;
-
 	&:before {
 		position: absolute;
 		top: -7px;
@@ -20,21 +19,10 @@
 		border-bottom-color: transparentize($sc-neutral-shade-500, 1-0.2);
 		content: '';
 	}
-    a {
+	a {
 	color: #000;
 	}
-}
-	&:after {
-		position: absolute;
-		top: -6px;
-		right: 15px;
-		display: inline-block;
-		border-right: 6px solid transparent;
-		border-bottom: 6px solid $sc-neutral-shade-0;
-		border-left: 6px solid transparent;
-		content: '';
-	}
-
+	
 }
 
 .header-mini-cart {

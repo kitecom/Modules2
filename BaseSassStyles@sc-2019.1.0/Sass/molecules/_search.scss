@@ -97,7 +97,7 @@ input.nav-search-input {
     -webkit-tap-highlight-color: transparentize($sc-neutral-shade-500, 1);
     border:1px solid $sc-color-theme-border;
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
         width: calc(100% - #{$sc-padding-lv1 * 18});
         width: expression(100% - #{$sc-padding-lv1 * 18});/* IE-OLD */
     }
