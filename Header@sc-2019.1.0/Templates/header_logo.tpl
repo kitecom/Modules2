@@ -1,7 +1,7 @@
-<div id="site-logo" class="content-banner"></div>
+ <div id="site-logo" class="content-banner"></div>
 
-<a class="header-logo" href="http://www.borgandoverstrom.com" width="196" height="34" alt="Borg &amp; Overström" title="{{headerLinkTitle}}">
-  <img src="https://store.borgandoverstrom.com/site/svg.logo.svg"/>
+<a class="header-logo" href="https:/www.borgandoverstrom.com"> 
+	<img src="https://store.borgandoverstrom.com/site/logo.svg">
 </a>
 
 

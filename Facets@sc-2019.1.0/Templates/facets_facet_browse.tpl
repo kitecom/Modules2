@@ -31,7 +31,7 @@
 
 				{{#if isCategory}}
 					<div class="facets-facet-browse-category">
-						<!--div data-view="Facets.Browse.CategoryHeading"></div-->
+						<div data-view="Facets.Browse.CategoryHeading"></div>
 
 						<div data-view="Facets.CategoryCells"></div>
 					</div>

@@ -1,15 +1,16 @@
 <a class="header-mini-cart-menu-cart-link {{#if showLines}}header-mini-cart-menu-cart-link-enabled{{/if}}" data-type="mini-cart" title="{{translate 'Cart'}}" data-touchpoint="{{cartTouchPoint}}" data-hashtag="#cart" href="#">
-	<!--i class="header-mini-cart-menu-cart-icon"></i-->
+	<!--<i class="header-mini-cart-menu-cart-icon"></i>-->
+	<svg id="icon-basket" viewBox="0 0 18.77 17"><path class="st0" d="M10.39 6V0h-2v6H0l3.67 11h11.44l3.67-11h-8.39zm3.28 9H5.11L2.77 8H16l-2.33 7z"></path></svg>
 	<span class="header-mini-cart-menu-cart-legend">
 		{{#if isLoading}}
 		<span class="header-mini-cart-summary-cart-ellipsis"></span>
 		{{else}}
-				
+				{{translate '$(0)' itemsInCart}}
 		{{/if}}
 	</span>
 </a>
 <div class="header-mini-cart">
-	 {{#if showLines}}
+	 {{#if showLines}} 
 	 	<div data-view="Header.MiniCartItemCell" class="header-mini-cart-container"></div>
 		<div class="header-mini-cart-subtotal">
 			<div class="header-mini-cart-subtotal-items">
@@ -40,7 +41,7 @@
 			</div>
 		</div>
 
-		{{else}}
+		{{else}} 
 		<div class="header-mini-cart-empty">
 			<a href="#" data-touchpoint="{{cartTouchPoint}}" data-hashtag="#cart">
 				{{#if isLoading}}
@@ -50,7 +51,7 @@
 				{{/if}}
 			</a>
 		</div>
-	{{/if}}
+	{{/if}} 
 </div>
 
 
@@ -58,8 +59,8 @@
 
 
 {{!----
-Use the following context variables when customizing this template:
-
+Use the following context variables when customizing this template: 
+	
 	model (Object)
 	model.addresses (Array)
 	model.addresses.0 (Object)

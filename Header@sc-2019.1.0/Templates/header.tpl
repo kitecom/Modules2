@@ -1,7 +1,8 @@
 <!--div class="header-message" data-view="Message.Placeholder"></div-->
 
-<div class="header-main-wrapper wide">
-	<div class="header-subheader">
+<div class="header-main-wrapper">
+<!--
+<div class="header-subheader">
 		<div class="header-subheader-container">
 		<ul class="header-subheader-options">
 			{{#if showLanguagesOrCurrencies}}
@@ -27,6 +28,7 @@
 		</ul>
 		</div>
 	</div>
+-->
 	<nav class="header-main-nav">
 
 		<div id="banner-header-top" class="content-banner banner-header-top" data-cms-area="header_banner_top" data-cms-area-filters="global"></div>
@@ -42,27 +44,36 @@
 				<div data-view="Header.Logo"></div>
 			</div>
 
-			<div class="header-topmenu-wrapper">
-				<div class="topmenu">
-					<ul>
-						<li><a href="https://www.borgandoverstrom.com/en/models/">Models</a></li>
-						<li><a href="https://www.borgandoverstrom.com/en/innovation/">Innovation</a></li>
-						<li><a href="https://www.borgandoverstrom.com/en/about-us/">About</a></li>
-						<li><a href="https://www.borgandoverstrom.com/en/support/">Support</a></li>
-						<li><a href="https://www.borgandoverstrom.com/en/contact-us/">Contact</a></li>
-					</ul>
-				</div>
+			<div class="static-menu">
+				<ul class="static-menu-ul">
+					<li class="static-menu-item">
+						<a class="nav-link" data-text="Models" href="https://www.borgandoverstrom.com/en/models/" title="Models">Models</a>
+					</li>					
+					<li class="static-menu-item">
+						<a class="nav-link" data-text="Innovation" href="https://www.borgandoverstrom.com/en/innovation/" title="Innovation">Innovation</a>
+					</li>					
+					<li class="static-menu-item">
+						<a class="nav-link" data-text="About" href="https://www.borgandoverstrom.com/en/about-us/" title="About">About</a>
+					</li>					
+					<li class="static-menu-item">
+						<a class="nav-link" data-text="Support" href="https://www.borgandoverstrom.com/en/support/" title="Support">Support</a>
+					</li>					
+					<li class="static-menu-item">
+						<a class="nav-link" data-text="Contact" href="https://www.borgandoverstrom.com/en/contact-us/" title="Contact">Contact</a>
+					</li>					
+				</ul>
 			</div>
 
 			<div class="header-right-menu">
-				<div class="header-menu-profile" data-view="Header.Profile">
-				</div>
-				<div class="header-menu-cart">
-					<div class="header-menu-cart-dropdown" >
-						<div data-view="Header.MiniCart"></div>
-					</div>
+				<div class="header-menu-profile" data-view="Header.Profile"></div>
+				
+				<div class="header-menu-cart-dropdown" >
+					<div data-view="Header.MiniCart"></div>
 				</div>
 				<div class="header-menu-searchmobile" data-view="SiteSearch.Button"></div>
+				<!--
+				<div class="header-menu-locator-mobile" data-view="StoreLocatorHeaderLink"></div>
+				-->
 			</div>
 		</div>
 
@@ -74,15 +85,15 @@
 <div class="header-secondary-wrapper" data-view="Header.Menu" data-phone-template="header_sidebar" data-tablet-template="header_sidebar">
 </div>
 
-
+	
 
 	<div data-view="SiteSearch"></div>
 
 
 
 {{!----
-Use the following context variables when customizing this template:
-
+Use the following context variables when customizing this template: 
+	
 	profileModel (Object)
 	profileModel.addresses (Array)
 	profileModel.addresses.0 (Array)

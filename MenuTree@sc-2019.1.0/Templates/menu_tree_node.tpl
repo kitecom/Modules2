@@ -2,7 +2,7 @@
 
 <div class="menu-tree-node" data-type="menu-tree-node-expandable" data-type="menu-tree-node-expandable" data-id='{{node.id}}' data-permissions="{{node.permission}}" data-permissions-operator="{{node.permissionOperator}}">
 
-	<a class="menu-tree-node-item-anchor" data-target="#menu-tree-node-{{node.id}}" data-action="expander" data-id="{{node.id}}">
+	<a class="menu-tree-node-item-anchor  node-{{node.id}}" data-target="#menu-tree-node-{{node.id}}" data-action="expander" data-id="{{node.id}}">
 		{{node.name}}
 		<i class="menu-tree-node-item-icon"></i>
 	</a>

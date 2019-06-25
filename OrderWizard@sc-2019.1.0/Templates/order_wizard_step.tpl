@@ -28,19 +28,12 @@
 	</div>
 
 
-	<div class="order-wizard-step-content-secondary">
+	<div class="order-wizard-step-content-secondary follow-scroll">
 		<div data-cms-area="order_wizard_cms_area_4" data-cms-area-filters="page_type"></div>
 		<section id="wizard-step-content-right" ></section>
-	</div>
+		<div class="order-wizard-step-actions-right">
+
 	
-
-	<div class="order-wizard-step-actions">
-
-		{{#if showBottomMessage}}
-		<small class="order-wizard-step-message {{bottomMessageClass}}">
-			{{bottomMessage}}
-		</small>
-		{{/if}}
 
 		<div class="order-wizard-step-button-container">
 
@@ -48,15 +41,31 @@
 			<button class="order-wizard-step-button-continue" data-action="submit-step">
 				{{continueButtonLabel}}
 			</button>
+				{{#if showBottomMessage}}
+				<small class="order-wizard-step-message {{bottomMessageClass}}">
+					{{bottomMessage}}
+				</small>
+				{{/if}}
 			{{/if}}
 			<button class="order-wizard-step-button-back" {{#unless showBackButton}}style="display:none;"{{/unless}} data-action="previous-step">
 				{{translate 'Back'}}
 			</button>
 		</div>
 	</div>
+	</div>
+	
+
+	
 </div>
 
-
+<script type="text/javascript">
+	$(function() {
+  	var loc = window.location.href; // returns the full URL
+  	if(/review/.test(loc)) {
+    $('#wizard-step-content-right').addClass('review');
+  	}
+});
+</script>
 
 {{!----
 Use the following context variables when customizing this template: 

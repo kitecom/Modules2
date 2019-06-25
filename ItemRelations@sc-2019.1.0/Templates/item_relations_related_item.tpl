@@ -4,6 +4,7 @@
 	</a>
 	<a {{{itemURL}}} class="item-relations-related-item-title">
 		<span itemprop="name">{{itemName}}</span>
+		<span itemprop="desc">{{model.item.storedisplayname}}</span>
 	</a>
 	<div class="item-relations-related-item-price" data-view="Item.Price">
 	</div>

@@ -1,5 +1,5 @@
 <p class="quick-order-empty-cart">
-	{{translate 'Continue Shopping on our <a href="/" data-touchpoint="home">Home Page</a> or use the Quick Add below to add items to your cart.' }}
+	{{translate 'Continue Shopping on our <a href="/search" data-touchpoint="home">Home Page</a>.' }}
 </p>
 
 

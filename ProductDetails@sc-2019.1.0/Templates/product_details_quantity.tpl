@@ -7,9 +7,9 @@
 
 			<div data-validation="control">
 				<div class="product-details-quantity-container">
-<button type="button" class="product-details-quantity-remove" data-action="updateQuantity" data-type="product-details-quantity-remove" data-value="-1" {{#if isMinusButtonDisabled}} disabled="disabled" {{/if}}>-</button>
+				<button id="minus" type="button" class="product-details-quantity-remove" data-action="updateQuantity" data-type="product-details-quantity-remove" data-value="-1" {{#if isMinusButtonDisabled}} disabled="disabled" {{/if}}>-</button>
 				<input type="number" name="quantity" id="quantity" data-action="changeQuantity" class="product-details-quantity-value" value="{{model.quantity}}" min="{{model.quantity}}">
-				<button  type="button" class="product-details-quantity-add" data-action="updateQuantity" data-value="+1">+</button>
+				<button id="plus" type="button" class="product-details-quantity-add" data-action="updateQuantity" data-value="+1">+</button>
 			</div>
 		</div>
 		</div>
@@ -19,9 +19,8 @@
 </div>
 
 <script type="text/javascript">
-	$('#quantity').addClass(function() {
-    	return parseInt($(this).text()) < '{{model.quantity}}' ? 'readMe' : 'free';
-	});
+
+  
 </script>
 
 

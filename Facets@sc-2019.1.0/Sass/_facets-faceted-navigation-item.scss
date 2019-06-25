@@ -36,7 +36,9 @@
 
 .facets-faceted-navigation-item-facet-option {
 	@extend .facets-faceted-navigation-facet-option;
-
+	input {
+		display: none;
+	}
 	span {
 		display: inline;
 	}

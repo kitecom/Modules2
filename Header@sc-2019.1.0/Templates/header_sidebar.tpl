@@ -66,8 +66,8 @@
 			{{#if showExtendedMenu}}
 				<li class="header-sidebar-menu-myaccount" data-view="Header.Menu.MyAccount"></li>
 			{{/if}}
-			<!--li data-view="QuickOrderHeaderLink"></li>
-			<li data-view="RequestQuoteWizardHeaderLink"></li-->
+			<li data-view="QuickOrderHeaderLink"></li>
+			<li data-view="RequestQuoteWizardHeaderLink"></li>
 		</ul>
 
 	</div>
@@ -78,14 +78,14 @@
 		{{translate 'Sign Out'}}
 	</a>
 	{{/if}}
-<!--
+
 	{{#if showLanguages}}
 	<div data-view="Global.HostSelector"></div>
 	{{/if}}
 	{{#if showCurrencies}}
 	<div data-view="Global.CurrencySelector"></div>
 	{{/if}}
--->
+
 </div>
 
 

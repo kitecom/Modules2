@@ -2,12 +2,11 @@
 	height: $sc-main-nav-height;
 	background-color: $sc-top-menu-background-color;
 	box-shadow: 3px 0px 6px $sc-header-shadow-color;
-	padding: 15px 0 0 0;
 }
 
 .header-simplified-header-logo{
 	text-align: center;
-
+	padding-top: 12px;
 	.header-logo-image{
 		width: auto;
 	}

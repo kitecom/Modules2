@@ -1,5 +1,5 @@
 {{#if showFacet}}
-	<div class="facets-faceted-navigation-item-facet-group" id="{{htmlId}}" data-type="rendered-facet" data-facet-id="{{facetId}}">
+	<div class="facets-faceted-navigation-item-facet-group {{facetId}}" id="{{htmlId}}" data-type="rendered-facet" data-facet-id="{{facetId}}">
 		{{#if showHeading}}
 			{{#if isUncollapsible}}
 				<div class="facets-faceted-navigation-item-facet-group-expander">

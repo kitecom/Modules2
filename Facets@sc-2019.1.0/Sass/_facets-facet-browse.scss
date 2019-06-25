@@ -22,7 +22,7 @@
 .facets-facet-browse-header {
 	@extend .clearfix;
 	border-bottom: 0px solid $sc-color-theme-border-light;
-	padding: 26px 0 20px 15px;
+	padding: 25px 0 11px 15px;
 }
 
 .facets-facet-browse-title {
@@ -237,3 +237,11 @@
 		}
 	}
 }
+
+
+.facets-facet-browse-content.parts {
+	.consumables,
+	.appliance_addons {
+		display: none;
+		}
+	}

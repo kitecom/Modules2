@@ -26,8 +26,10 @@
 .order-wizard-paymentmethod-selector-module-button {
 	@extend .button-medium;
 	@extend .pill-button;	
+	color: #fff;
 }
 
 .order-wizard-paymentmethod-selector-module-button.selected {
 	@extend .pill-button-active;
 }
+

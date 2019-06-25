@@ -53,6 +53,9 @@
 		float: left;
 		width: 20%;
 		padding-right: $sc-padding-lv8;
+		@media (min-width: $screen-md-min) {
+		display: none;
+		}	
 	}
 
 	.header-menu-myaccount-anchor-level2 {
@@ -63,17 +66,22 @@
 	.header-menu-myaccount-anchor-level3 {
 		@extend .header-menu-level3-anchor;
 	}
-
+	.header-menu-myaccount-overview-anchor,
 	.header-menu-myaccount-signout-link {
-		float: right;
-		display:block;
-		padding: $sc-padding-lv3 0;
+		float: left;
+	    display: block;
+	    padding: 5px 0;
+	    width: 100%;
+	    color: #000;
+	    &:hover {
+	    	color: #282828!important;
+	    }
 	}
 
 	.header-menu-myaccount-signout-icon{
-		@extend .fa;
+		/*@extend .fa;
 		@extend %fa-sign-out;
-		font-size: $sc-font-size-m;
+		font-size: $sc-font-size-m;*/
 	}
 }
 

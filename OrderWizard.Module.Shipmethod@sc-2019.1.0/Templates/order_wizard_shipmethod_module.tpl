@@ -4,7 +4,9 @@
 			{{title}}
 		</h3>
 	{{/if}}
-	
+	{{model.user.name}}
+	{{model.user.StoreEmail}}
+	{{model.user.StoreEmail}}
 	{{#if showEnterShippingAddressFirst}}
 		<div class="order-wizard-shipmethod-module-message">
 			{{translate 'Warning: Please enter a valid shipping address first'}}
@@ -39,7 +41,7 @@
 							id="delivery-options-{{internalid}}" />
 							
 							<span class="order-wizard-shipmethod-module-option-name">{{name}}
-								<span class="order-wizard-shipmethod-module-option-price">{{rate_formatted}}</span>	
+								<span class="order-wizard-shipmethod-module-option-price"><b>{{rate_formatted}}</b></span>	
 							</span>
 						</a>
 					{{/each}}
@@ -52,7 +54,6 @@
 		{{/if}}
 	{{/if}}
 </div>
-
 
 
 

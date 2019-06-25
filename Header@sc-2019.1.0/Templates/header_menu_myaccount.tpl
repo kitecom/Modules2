@@ -87,7 +87,7 @@
 	</li>
 
 	<!-- Product Lists - For single list mode data-hashtag will be added dynamically -->
-	<!--{{#if isProductListsEnabled}}
+	{{#if isProductListsEnabled}}
 		<li class="header-menu-myaccount-item-level2">
 			<a class="header-menu-myaccount-anchor-level2" href="#" data-touchpoint="customercenter" data-hashtag="#wishlist" name="wishlist">
 				{{translate 'Wishlist'}}
@@ -118,7 +118,7 @@
 				{{/if}}
 			</ul>
 		</li>
-	{{/if}}-->
+	{{/if}}
 
 
 	<!-- Billing -->
@@ -189,7 +189,7 @@
 			</li>
 		</ul>
 	</li>
-	<!--
+
 	{{#if isCaseModuleEnabled}}
 	<li class="header-menu-myaccount-item-level2" data-permissions="lists.listCase.2">
 		<a  class="header-menu-myaccount-anchor-level2" tabindex="-1" href="#" data-action="push-menu" name="cases">
@@ -212,14 +212,14 @@
 		</ul>
 	</li>
 	{{/if}}
--->
+
 </ul>
 
 
 
 {{!----
-Use the following context variables when customizing this template:
-
+Use the following context variables when customizing this template: 
+	
 	isProductListsEnabled (Boolean)
 	isSingleList (Boolean)
 	isCaseModuleEnabled (Boolean)

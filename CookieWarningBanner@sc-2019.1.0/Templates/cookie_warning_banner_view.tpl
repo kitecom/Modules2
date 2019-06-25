@@ -1,13 +1,13 @@
 {{#if showBanner}}
 	<div class="cookie-warning-banner-view alert" role="alert">
-		<div>
+		<div style="color: #fff;">
 			{{{cookieMessage}}}
 			{{#if showLink}}
-			 <a href="https://system.netsuite.com{{linkHref}}" data-toggle="show-in-modal" data-page-header="{{linkContent}}">{{linkContent}}</a>
+			 <a style="color: #fff;" href="https://system.netsuite.com{{linkHref}}" data-toggle="show-in-modal" data-page-header="{{linkContent}}">{{linkContent}}</a>
 			{{/if}}
 		</div>
 		{{#if closable}}
-			<button class="cookie-warning-banner-view-close-button" data-action="close-message" type="button" data-dismiss="alert">&times;</button>
+			<button class="cookie-warning-banner-view-close-button" data-action="close-message" type="button" data-dismiss="alert" style="color: #000;">&times;</button>
 		{{/if}}
 	</div>
 {{/if}}

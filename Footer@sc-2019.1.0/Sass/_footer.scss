@@ -1,6 +1,4 @@
-svg:not(:root) {
-  display: none;
-}footer {
+footer {
     background: #000;
     color: #fff;
     padding-top: 5.75rem;
@@ -307,13 +305,13 @@ svg:not(:root) {
         min-width: rem(300px);
     }
 }
-svg:not(:root) {
-  display: none;
-}
 
 p.delta.light{
   font-size: 3.125;
 }
 .visuallyhidden {
   display: none;
+}
+svg:not(:root) {
+    display: inline-block;
 }

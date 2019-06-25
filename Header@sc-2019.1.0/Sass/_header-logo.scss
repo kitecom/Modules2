@@ -3,6 +3,7 @@
 	line-height: $sc-main-nav-height;
 	height: $sc-main-nav-height;
 	margin-left:-$sc-margin-lv2;
+
 	@media (max-width: $screen-xs-min) {
 		max-width: 100%;
 	}
@@ -23,3 +24,5 @@
 		width: auto;
 	}
 }
+
+

@@ -1,9 +1,7 @@
 <nav class="header-menu-secondary-nav">
-
-	<!--div class="header-menu-search" data-view="SiteSearch.Button"></div-->
-	<div class="shopping-layout-breadcrumb" itemscope itemtype="https://schema.org/WebPage">
-		<div data-view="Global.Breadcrumb" data-type="breadcrumb"></div>
-	</div>
+	<!--
+	<div class="header-menu-search" data-view="SiteSearch.Button"></div>
+	-->
 	<ul class="header-menu-level1">
 
 		{{#each categories}}
@@ -18,7 +16,7 @@
 							<ul class="header-menu-level2">
 								{{#each categories}}
 								<li>
-									<a class="{{class}}" {{objectToAtrributes this}}>{{translate text}}<span class="cat-qty"></span></a>
+									<a class="{{class}}" {{objectToAtrributes this}}>{{translate text}}</a>
 
 									{{#if categories}}
 									<ul class="header-menu-level3">
@@ -43,15 +41,12 @@
 
 </nav>
 
-<script>
-	
 
-</script>
 
 
 {{!----
-Use the following context variables when customizing this template:
-
+Use the following context variables when customizing this template: 
+	
 	categories (Array)
 	showExtendedMenu (Boolean)
 	showLanguages (Boolean)

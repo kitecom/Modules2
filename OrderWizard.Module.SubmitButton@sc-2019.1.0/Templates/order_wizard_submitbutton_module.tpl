@@ -2,6 +2,7 @@
 <div class="{{wrapperClass}}">
 {{/if}}
 <button class="order-wizard-submitbutton-module-button" data-action="submit-step">{{continueButtonLabel}}</button>
+
 {{#if showWrapper}}
 </div>
 {{/if}}

@@ -24,10 +24,13 @@
 				<span class="product-views-price-lead" itemprop="price" data-rate="{{price}}" data-role="price-lead-formatted">
 					{{priceFormatted}}
 				</span>
+				<small class="product-views-price-old">
+					{{pricelevel5_formatted}}
+				</small>
 				<!--{{#if showComparePrice}}-->
-					<small class="product-views-price-old">
-						{{comparePriceFormatted}} {{pricelevel5_formatted}} {{item.price_1_}} {{pricelevel1_formatted}}
-					</small>
+
+						<!--{{comparePriceFormatted}} {{pricelevel5_formatted}} {{item.price_1_}}--> {{pricelevel1_formatted}}
+					
 				<!--{{/if}}-->
 				<link itemprop="availability" href="{{#if isInStock}}https://schema.org/InStock{{else}}https://schema.org/OutOfStock{{/if}}"/>
 			</span>

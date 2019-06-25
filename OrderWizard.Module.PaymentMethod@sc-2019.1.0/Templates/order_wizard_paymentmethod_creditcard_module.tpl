@@ -14,9 +14,7 @@
 	{{/if}}
 
 
-	<div class="order-wizard-paymentmethod-creditcard-module-form-ponum">
-		{{custbody_bo_web_po}}
-	</div>
+	
 
 	<p class="order-wizard-paymentmethod-creditcard-module-learn-more"> <i class="order-wizard-paymentmethod-creditcard-module-learn-more-icon"></i> {{ translate 'Learn more about <a class="order-wizard-paymentmethod-creditcard-module-learn-more-link" data-action="show-safe-secure-info"> safe and secure </a> shopping' }} </p>
 </div>

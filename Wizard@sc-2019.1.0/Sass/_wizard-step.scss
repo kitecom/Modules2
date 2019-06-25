@@ -4,10 +4,11 @@
 
 .wizard-step-message{
 	display: block;
+	width: 100%;
 	margin-bottom: $sc-margin-lv4;
 
 	@media (min-width: $screen-sm-min){
-		text-align: right;
+		text-align: left;
 	}
 }
 
@@ -20,11 +21,10 @@
 
 	@extend .button-large;
 	@extend .button-primary;
-	min-width: 190px;
+	width: 100%;
 
 	@media (min-width: $screen-sm-min){
-		margin-left: $sc-margin-lv2;
-		float:right;
+		float:left;
 	}
 }
 
@@ -39,6 +39,10 @@
 		float:right;
 	}
 }
-
-
-
+#wizard-step-content-right.review {
+	margin-top: -48px;
+}
+.order-wizard-step-content-main .order-wizard-termsandconditions-module-default.module-rendered,
+#wizard-step-content-right.review + .order-wizard-step-actions-right {
+	display: none;
+}

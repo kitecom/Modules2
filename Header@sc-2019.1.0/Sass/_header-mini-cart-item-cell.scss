@@ -18,10 +18,22 @@
 
 .header-mini-cart-item-cell-details {
 	@extend .col-xs-9;
+	a {
+		color: #282828;
+		&:hover {
+			color: #000;
+		}
+	}
 }
 
 .header-mini-cart-item-cell-product-title {
 	margin-bottom: $sc-margin-lv2;
+	a {
+		color: #282828;
+		&:hover {
+			color: #000;
+		}
+	}
 }
 
 .header-mini-cart-item-cell-product-price {
@@ -59,13 +71,10 @@
 
 .header-mini-cart-item-cell-title-navigable {
 	@extend .medium-title-navigable;
-	&::hover {
-		color: #000;
-	}
 }
 
 .header-mini-cart-item-cell-free-badge {
-@extend .free-badge;
+	@extend .free-badge;
 	font-size: $sc-font-size-xxs;
     line-height: 1;
     display: inline-block;

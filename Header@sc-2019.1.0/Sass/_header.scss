@@ -1,4 +1,4 @@
-$sc-main-nav-height: 64px;
+$sc-main-nav-height: 55px;
 $sc-main-nav-width: 130px;
 $sc-main-nav-link-height: 44px;
 $sc-secondary-menu-height: 55px;
@@ -6,6 +6,7 @@ $sc-sidebar-size: 246px;
 
 .header-message {
 	padding: 0;
+	background-color: $sc-color-theme-background;
 	text-align:center;
 
 	.global-views-message {
@@ -23,15 +24,17 @@ $sc-sidebar-size: 246px;
 	position: relative;
 	background-color: $sc-header-background-color;
 	box-shadow: none;
-	&.wide {
-		width: 100%;
+
+	@media (min-width: $screen-md-min) {
+		max-height: 68px;
+    	padding-top: 20px;
 	}
 }
 
 .header-main-nav {
-	//@extend .container;
-	max-height: $sc-main-nav-height;
-
+	@extend .container;
+	min-height: $sc-main-nav-height;
+	width: 100%;
 	a , button {
 		i {
 			color: $sc-mobile-header-icon-color;
@@ -63,26 +66,26 @@ $sc-sidebar-size: 246px;
 		border: none;
 
 		a {
-			color: #b0b0b0;
+			color: $sc-header-link-text-color;
 			text-transform: $sc-header-link-text-transform;
 
 			i {
-				color: #fff;
+				color: $sc-header-link-text-color;
 			}
 
 			&:hover, &:focus {
-				color: #fff;
+				color: $sc-header-link-hover-text-color;
 
 				i {
-					color: #fff;
+					color: $sc-header-link-hover-text-color;
 				}
 			}
 
 			&:active {
-				color: #fff;
+				color: $sc-header-link-active-text-color;
 
 				i {
-					color: #fff;
+					color: $sc-header-link-active-text-color;
 				}
 			}
 		}
@@ -125,6 +128,7 @@ $sc-sidebar-size: 246px;
 
 .header-logo-wrapper {
 	float: left;
+	margin: 0 0 0 24px;
 }
 
 ///////////////////////////////////////////////////////////////
@@ -148,22 +152,33 @@ $sc-sidebar-size: 246px;
 	margin-left: -$sc-margin-lv2;
 }
 
-.header-main-nav button i.header-sidebar-toggle-icon {
+.header-main-nav button i.header-sidebar-toggle-icon { 
 	@extend .fa;
 	@extend %fa-bars;
-	color: #fff;
+	color: $sc-mobile-navigation-hamburger-icon-color;
 	font-size: 24px;
-	margin:2px 0 0 20px;
+	margin-top:2px;
 }
 
 ///////////////////////////////////////////////////////////////
 //main nav positioning
-
+/*
 .header-right-menu {
 	display:flex;
-	float: right;
-	margin-top: (($sc-main-nav-height) - ($sc-main-nav-link-height)) / 2;
-	margin-bottom: (($sc-main-nav-height) - ($sc-main-nav-link-height)) / 2;
+	margin-top: 0;
+	margin-right: 10px;
+	/*> div {
+		padding: 0;
+		margin: -10px 0 0 -7px;
+		.header-menu-cart {
+			float: left;
+			position: relative;
+			margin-left: 0px;
+		}
+	
+	.header-menu-searchmobile {
+		margin-right: 10px;
+	}
 }
 
 .header-menu-profile,
@@ -177,9 +192,9 @@ $sc-sidebar-size: 246px;
 		display: block;
 	}
 }
-
+}*/
 .header-menu-storelocator {
-    float: left;
+    float: left; 
 }
 
 .header-menu-settings {
@@ -190,21 +205,13 @@ $sc-sidebar-size: 246px;
 	margin-bottom: $sc-margin-lv2;
 }
 
-.header-menu-cart {
-	float: left;
-	position: relative;
-
-	@media (min-width: $screen-md-min) {
-		margin-left: $sc-margin-lv4;
-	}
-}
 
 .header-menu-searchmobile {
 	float: left;
 
-	@media (min-width: $screen-md-min) {
+	/*@media (min-width: $screen-md-min) {
 		display: none;
-	}
+	}*/
 }
 
 %header-link {
@@ -266,7 +273,7 @@ $sc-sidebar-size: 246px;
 .header-menu-settings-icon {
 	font-size: $sc-font-size-xl;
 	@extend .fa;
-	@extend %fa-globe;
+	@extend %fa-globe; 
 }
 
 .header-menu-settings-carret {
@@ -284,12 +291,13 @@ $sc-sidebar-size: 246px;
 	bottom: 0;
 	left: - ($sc-sidebar-size);
 	width: $sc-sidebar-size;
-	background-color: $sc-color-theme-background-light;
-	z-index: 1;
+	background-color: #282828!important;
+	z-index: 1000;
 
 	@media (min-width: $screen-md-min) {
 		position: relative;
-		background-color: $sc-color-theme-background-light;
+		background-color: $sc-main-navigation-background-color;
+		border-bottom:1px solid $sc-color-theme-border-light;
 		top: auto;
 		bottom: auto;
 		left: auto;
@@ -349,9 +357,6 @@ $sc-sidebar-size: 246px;
 	color: $sc-color-secondary;
 	border-bottom: 1px solid $sc-top-menu-border-color;
 
-	@media(min-width: $screen-sm-min) {
-		display: none;
-	}
 }
 
 .header-subheader-container {
@@ -440,78 +445,13 @@ $sc-sidebar-size: 246px;
 .header-menu-locator-mobile {
 	display:block;
 	@media(min-width: $screen-sm-min) {
-		//display: none;
+		display: none;
 	}
 }
-.header-content {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	.header-logo-wrapper,
-	.header-topmenu-wrapper,
-	.header-right-menu {
-		width: 40%;
-		padding: 18px;
-	}
-	.header-logo-wrapper {
-		padding: 14px 0 0 38px;
-	}
 
-	.header-topmenu-wrapper ul {
-		display: flex;
-		flex-direction: row;
-		padding: 8px 10%;
-		text-align: center;
-		li {
-			width: 25%;
-		}
-	}
-	.header-right-menu {
-		display: flex;
-		justify-content: flex-end;
-		padding: 0 38px 0 0;
-		.header-menu-profile,
-		.header-menu-cart,
-		.header-menu-searchmobile,
-		.site-search-button-link {
-			display: flex;
-			height:48px;
-			padding: 0;
-			background: url(https://store.borgandoverstrom.com/site/icons.png);
-    		background-repeat: no-repeat;
-		}
-		.header-menu-profile {
-			width: 18px;
-			background-position: -8px 50%;
-		}
-		.header-menu-cart {
-			width: 28px;
-			background-position: -45px 50%;
-		}
-		.header-menu-searchmobile,
-		.site-search-button-link {
-			background-position: -70px 50%;
-		    width: 28px;
-		}
-		.header-menu-profile .header-profile-welcome-link {}
-		.header-menu-cart .header-menu-cart-dropdown {}
-		.header-menu-searchmobile > div {}
-	}
-}
-.header-mini-cart-item-cell{
-	&-title-navigable::hover {
-		color: #000;
-	}
-	.transaction-line-views-selected-option-color-text {
-		text-transform: capitalize;
-	}
-	.transaction-line-views-selected-option-color,
-	.transaction-line-views-selected-option{
-		&-label {
-				display: none;
-		}
-		p {
-			display: inline;
-		}
-	}
+svg {
+	vertical-align: middle;
+    display: inline-block;
+    width: 1.125rem;
+    height: 1.125rem;
 }
