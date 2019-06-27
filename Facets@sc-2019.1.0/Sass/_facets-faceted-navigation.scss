@@ -22,7 +22,7 @@
 	}
 }
 
-.facets-faceted-navigation-title {
+.facets-faceted-navigation-title { 
 	display: none;
 
 	@media (min-width: $screen-md-min) {
@@ -178,4 +178,7 @@
 
 .facets-faceted-navigation-item-color-option > span {
 		display: none;
+}
+.facets-faceted-navigation-item-facet-group.custitem_facet_related_accs {
+	display: none;
 }
