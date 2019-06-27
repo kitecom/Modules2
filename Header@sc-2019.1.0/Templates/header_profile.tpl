@@ -1,7 +1,7 @@
 {{#if showExtendedMenu}}
 	<a class="header-profile-welcome-link" href="#" data-toggle="dropdown">
 		<i class="header-profile-welcome-user-icon"></i>
-		{{translate 'Welcome <strong class="header-profile-welcome-link-name">$(0)</strong>' displayName}}
+			{{translate 'Hi <strong class="header-profile-welcome-link-name">$(0)</strong>' displayName}} {{#unless isPriceEnabled}} <small>Please <a href="/login">log in</a></small>{{/unless}}
 		<i class="header-profile-welcome-carret-icon"></i>
 	</a>
 
@@ -27,7 +27,7 @@
 					{{#if showRegister}}
 						<li> | </li>
 						<li>
-							<a class="header-profile-register-link" data-touchpoint="register" data-hashtag="login-register" href="#">
+							<a class="header-profile-register-link" data-touchpoint="register" data-hashtag="login-register" href="#"> 
 								{{translate 'Register'}}
 							</a>
 						</li>
