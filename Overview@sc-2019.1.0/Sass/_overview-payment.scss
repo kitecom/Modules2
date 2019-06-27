@@ -41,3 +41,10 @@
 	display: block;
 	text-align: right;
 }
+p.add-card a {
+	display: inline;
+	margin: 0;
+	&:hover {
+		color: #fff;
+	}
+}

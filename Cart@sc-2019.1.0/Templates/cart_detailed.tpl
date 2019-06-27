@@ -55,15 +55,15 @@
 		{{/if}}
 	</div>
 	<div class="cart-detailed-footer">
-		{{#if showLines}}
+		<!--{{#if showLines}}-->
 			<div data-view="SavedForLater" class="cart-detailed-savedforlater"></div>
 
-			<div data-view="RecentlyViewed.Items" class="cart-detailed-recently-viewed"></div>
+			<!--div data-view="RecentlyViewed.Items" class="cart-detailed-recently-viewed"></div-->
 			<div data-view="Related.Items" class="cart-detailed-related"></div>
 			<div data-view="Correlated.Items" class="cart-detailed-correlated"></div>
-		{{else}}
-			<div data-view="SavedForLater" class="cart-detailed-savedforlater"></div>
-		{{/if}}
+		<!--{{else}}-->
+			<!--div data-view="SavedForLater" class="cart-detailed-savedforlater"></div-->
+		<!--{{/if}}-->
 	</div>
 
 	<div data-cms-area="cart_detailed_cms_area_3" data-cms-area-filters="path"></div>

@@ -2,7 +2,7 @@
 	<div class="header-sidebar-profile-menu" data-view="Header.Profile"></div>
 
 	<div class="header-sidebar-menu-wrapper" data-type="header-sidebar-menu">
-
+		
 		<ul class="header-sidebar-menu">
 			{{#each categories}}
 				{{#if text}}

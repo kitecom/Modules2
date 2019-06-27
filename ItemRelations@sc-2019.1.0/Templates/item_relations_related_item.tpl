@@ -3,8 +3,9 @@
 		<img src="{{resizeImage thumbnail.url 'thumbnail'}}" alt="{{thumbnail.altimagetext}}" />
 	</a>
 	<a {{{itemURL}}} class="item-relations-related-item-title">
-		<span itemprop="name">{{itemName}}</span>
+		<span itemprop="name">{{storedescription}}</span>
 		<span itemprop="desc">{{model.item.storedisplayname}}</span>
+		<span itemprop="desc">{{pricelevel5_formatted}}</span>
 	</a>
 	<div class="item-relations-related-item-price" data-view="Item.Price">
 	</div>

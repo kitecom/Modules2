@@ -6,18 +6,16 @@
 
 .address-details-info{
     margin-bottom:$sc-margin-lv2;
-    min-height: 145px;
 }
 .address-details-container p {
     font-style: normal;
 }
 .address-details-container {
     padding: $sc-padding-lv3;
-    min-height: 250px;
 }
 .address-details-container-multiselect-address-line {
     p {
-        display: inline-block;
+        display: inline-block; 
     }
 }
 .address-details-select-address {
@@ -165,7 +163,7 @@
     background-color: #282828;
     color: #fff;
     * {
-        color: #fff;
+        color: #fff; 
     }
 }
 }

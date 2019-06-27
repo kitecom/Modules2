@@ -34,14 +34,7 @@
 	flex-flow: row nowrap;
 	flex-basis: 30%;
 	justify-content: space-between;
-	.header-logo-wrapper {
-		flex: 3;
-	}
-	.static-menu {
-		flex: 2;
-	}
 	.header-right-menu{
-		flex: 3;
 	    display: flex;
 	    flex-direction: row;
 	    justify-content: flex-end;
@@ -51,6 +44,15 @@
 	    > div {
 	    	margin: 0 -1px;
 	    }
+	}
+	.header-logo-wrapper {
+		flex: 3;
+	}
+	.static-menu {
+		flex: 2;
+	}
+	.header-right-menu{
+		flex: 3;
 	}
 }
 

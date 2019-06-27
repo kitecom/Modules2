@@ -2,6 +2,9 @@
 	<!--
 	<div class="header-menu-search" data-view="SiteSearch.Button"></div>
 	-->
+	{{#if isCategory}}
+		<div data-view="Facets.Browse.CategoryHeading"></div>
+	{{/if}}
 	<ul class="header-menu-level1">
 
 		{{#each categories}}

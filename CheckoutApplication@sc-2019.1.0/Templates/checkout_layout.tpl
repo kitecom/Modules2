@@ -9,12 +9,12 @@
 		
 		<div id="content" class="checkout-layout-content"></div>
 		<!-- / Main Content Area -->
-		{{StoreEmail}}
-		{{{StoreEmail}}}
+		
 	</div>
 	<footer id="site-footer" class="checkout-layout-footer" data-view="Footer"></footer>
 </div>
 <script type="text/javascript">
+	
 	(function($) {
 	    var element = $('.follow-scroll'),
 	        originalY = element.offset().top;Here: 
@@ -35,6 +35,7 @@
 	        }, 250);
 	    });
 	})(jQuery);
+	
 </script>
 
 

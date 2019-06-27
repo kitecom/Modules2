@@ -27,7 +27,7 @@
 				<thead class="overview-home-content-table">
 					<tr class="overview-home-content-table-header-row">
 						<th class="overview-home-content-table-header-row-title">
-							<span>{{translate 'Purchase No.'}}</span>
+							<span>{{translate 'Order No.'}}</span>
 						</th>
 						<th class="overview-home-content-table-header-row-date">
 							<span>{{translate 'Date'}}</span>
@@ -60,20 +60,7 @@
 		</div>
 	</div>
 
-	<!--div class="ma-home">
-		<div class="ma-home-orders"><!--div data-cms-area="ma_home_orders" data-cms-area-filters="path" class="myaccount_cms_area"></div>
-			<h3>Orders</h3>
-			<p>Track, modify or cancel an order or make a return</p>
-			<a href="#">View your orders</a>
-		</div>
-		<div class="ma-home-acc-mgmnt"><div data-cms-area="ma_home_acc_mgmnt" data-cms-area-filters="path" class="myaccount_cms_area"></div></div>
-		<div class="ma-home-resources"><div data-cms-area="ma_home_resources" data-cms-area-filters="path" class="myaccount_cms_area"></div></div>
-		<div class="ma-home-settings"><div data-cms-area="ma_home_settings" data-cms-area-filters="path" class="myaccount_cms_area"></div></div>
-		<div class="ma-home-appliances"><div data-cms-area="ma_home_appliances" data-cms-area-filters="path" class="myaccount_cms_area"></div></div>
-		<div class="ma-home-news"><div data-cms-area="ma_home_news" data-cms-area-filters="path" class="myaccount_cms_area"></div></div>
-		<div class="ma-home-comms"><div data-cms-area="ma_home_comms" data-cms-area-filters="path" class="myaccount_cms_area"></div></div>
-		<div class="ma-home-slas"><div data-cms-area="ma_home_slas" data-cms-area-filters="path" class="myaccount_cms_area"></div></div>
-	</div-->
+	
 
 </section>
 

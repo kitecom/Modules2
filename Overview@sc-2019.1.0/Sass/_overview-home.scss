@@ -8,7 +8,7 @@
 		@media (min-width: $screen-sm-min) {
 			float: left;
 			width: auto;
-		}
+		} 
 	}
 }
 .overview-home-orders-title-link {
@@ -233,23 +233,10 @@
     	color: #282828;
     }
 }
-.overview-payment-card-button-edit {
-	margin-top: 0;
-    position: absolute;
-    top: -15px;
-    right: 0px;
-    &::after {
-    	font-family: FontAwesome;
-    	content: "\f067";
-    	color: #000;
-    }
-    a:hover {
-    	color: #282828;
-    }
-}
+
 .overview-home-purchases-list tr:hover {
 	background-color: #282828;
-	*{
-		color: #fff;
+		*{
+			color: #fff;
+		}
 	}
-}

@@ -49,13 +49,15 @@ html {
 
 	.bx-wrapper {
 		margin-bottom: 0;
-
+		min-width: 100%!important;
 		.bx-viewport {
 			border: none;
 			-webkit-box-shadow: none;
 			-moz-box-shadow: none;
 			box-shadow: none;
-			left: 0;
+			left: -10px;
+			min-height: 330px!important;
+			width: 102%!important;
 		}
 
 		.bx-pager {

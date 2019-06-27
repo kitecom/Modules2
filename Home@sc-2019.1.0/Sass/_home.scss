@@ -4,5 +4,67 @@
   } 
 }
 
+.home-1{}
 
+.home-2 {
+	max-width: 1170px;
+    margin: 20px auto;
+    border: 1px solid #282828;
+ }
+.home-cats {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.home-cats-models,
+.home-cats-parts,
+.home-cats-accs {
+	flex-basis: 0 0 100%;
+	padding: 20px;
+	*{
+		color: #fff;
+	}
+}
 
+.home-cats-models {
+	flex: 1 0 100%;
+    background: url(https://store.borgandoverstrom.com/site/home-models.png) no-repeat 0% 0% #000;
+    background-size: 100%;
+    min-height: 460px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 20px;
+	h1 {
+		flex: 3.5;
+		padding: 20px;
+	}
+	p{
+		align-self: flex-end;
+	    justify-self: flex-end;
+	    flex: 3.3;
+	    width: 34%;
+	}
+	.models-link{
+		align-self: flex-end;
+	    justify-self: flex-end;
+	    flex: 1;
+	    a {
+	    	color: #cca323;
+	    	border: 1px solid #cca323;
+	    	border-radius: 15px;
+	    	padding: 5px 10px;
+	    	&:hover {
+	    		background: #cca323;
+	    		color: #000;
+	    		}
+	    	}	
+		}
+	}
+.home-cats-parts {
+	flex:1 1 50%; 
+	background: #000;
+}
+.home-cats-accs {
+	flex:1 1 50%; 
+	background: #000;
+}

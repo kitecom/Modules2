@@ -11,9 +11,8 @@
 		</div>
 	{{else}}
 		<div class="overview-payment-card-content">
-			<p>{{translate 'We have no default credit card on file for this account.'}}</p>
+			<p class="add-card">{{translate 'We have no default credit card on file for this account.'}} <a href="/creditcards/new" class="overview-payment-card-button-edit" data-toggle="show-in-modal">{{translate 'Click here to add one'}}</a></p>
 		</div>
-		<a href="/creditcards/new" class="overview-payment-card-button-edit" data-toggle="show-in-modal">{{translate 'Add'}}</a>
 	{{/if}}
 	</section>
 </article>
